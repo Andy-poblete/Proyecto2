@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar bg-body-tertiary">
             <div class="container-fluid">
-                <a class="navbar-brand">UDD</a>
+                <a class="navbar-brand">CRUD-UDD</a>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -28,12 +28,29 @@
             <div class="CRUD">
                 <div class="row">
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+                        Nombre:<input type="text" class="form-control" id="idNombre" placeholder="Nombre" aria-label="Nombre">
                     </div>
                     <div class="col">
-                        <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                        Apellido:<input type="text" class="form-control" id="idApellido" placeholder="Apellido" aria-label="Apellido">
                     </div>
                 </div>
+                <!--aqui se creara el boton-->
+                <p>
+                    <div>
+                        <button type="submit" class="btn btn-light" id="btnAdd" onclick="addData()">Agregar Datos</button>
+                    </div>
+                    <!-- Se hace una separacion de los datos que se van agregando -->
+                    <hr>
+                </p>
+                <table class="table table_border" id="tableData">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido</th>
+                        </tr>
+
+                    </thead>
+                </table>
             </div>
         </div>
     </main>

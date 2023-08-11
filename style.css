@@ -31,3 +31,11 @@ header .navbar {
     margin-left: 20px !important;
     margin-right: 20px !important;
 }
+
+.col {
+    color: white;
+}
+
+.btn {
+    margin-left: 20px;
+}
