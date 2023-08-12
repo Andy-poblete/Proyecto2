@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Proyecto CRUD</title>
 </head>
 
 <body>
@@ -24,41 +24,46 @@
     </header>
 
     <main>
-        <div class="principal">
-            <div class="CRUD">
+        <div class="container">
+            <div class="container mb-5">
                 <div class="row">
-                    <div class="col">
-                        Nombre:<input type="text" class="form-control" id="idNombre" placeholder="Nombre" aria-label="Nombre">
-                    </div>
-                    <div class="col">
-                        Apellido:<input type="text" class="form-control" id="idApellido" placeholder="Apellido" aria-label="Apellido">
-                    </div>
+                    <form >
+                        <div class="mb-3">
+                            <label class="form-label">Correo electronico</label>
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Correo electronico">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Nombre Completo</label>
+                            <input type="text" class="form-control" id="inputNombre" placeholder="Nombre Completo">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Telefono</label>
+                            <input type="number" class="form-control" id="inputNumero" placeholder="Telefono">
+                        </div>
+                        <button type="submit" class="btn btn-primary" id="btnAdd" onclick="addData()">Agregar
+                            Datos</button>
+                        <button type="submit" class="btn btn-primary" id="btnUpdate">Actualizar</button>
+                    </form>
                 </div>
-                <!--aqui se creara el boton-->
-                <p>
-                    <div class="conta">
-                        <button type="submit" class="btn btn-light" id="btnAdd" click="addData()">Agregar Datos</button>
-                    </div>
-                    <!-- Se hace una separacion de los datos que se van agregando -->
-                    <hr>
-                </p>
-                <table class="table table_border" id="tableData">
+                <hr>
+                <table class="table table_bordered" id="tableData">
                     <thead>
                         <tr>
+                            <th>Email</th>
                             <th>Nombre</th>
-                            <th>Apellido</th>
-                            <th>Accion</th>
+                            <th>Numero</th>
+                            <th>ACCIONES</th>
                         </tr>
                     </thead>
                     <tbody>
 
                     </tbody>
                 </table>
-            </div>   
+            </div>
         </div>
         <footer>
-            
-            PROYECTO NUMEROº 2 DEL BOOTCAMP DE LA UDD AÑO 2023
+
+            <h3>PROYECTO NUMEROº 2 DEL BOOTCAMP DE LA UDD AÑO 2023</h3>
         </footer>
     </main>
     <script scr="./app.js"></script>
